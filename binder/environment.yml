@@ -1,4 +1,4 @@
-name: base
+name: class
 channels:
   - conda-forge
   - bioconda
@@ -6,6 +6,15 @@ channels:
 dependencies:
   - python=3.9
   - rbase=4.0
-  - matplotlib
-  - numpy
-  - pandas
+  - r-reshape2
+  - r-ggplot2
+  - r-tidyverse
+  - r-plotly
+  - r-stringr
+  - pip
+  - pip:
+    - matplotlib
+    - numpy
+    - pandas
+    - plotly
+    - scikit-learn
